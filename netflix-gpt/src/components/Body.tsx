@@ -1,11 +1,11 @@
-import { Browse } from './Browse';
-import Login from './Login';
+import { Router, RouterProvider } from 'react-router-dom';
+import { appRouter } from '../routes';
 
 const Body = () => {
+  
   return (
     <div>
-      <Login />
-      <Browse />
+      <RouterProvider router={appRouter} />
     </div>
   )
 }
